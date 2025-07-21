@@ -1,0 +1,3 @@
+# cpplint configuration for Arduino code
+set noparent
+filter=-build/include_order 

@@ -1,0 +1,38 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "IoT Sensor API",
+    "version": "1.0.0",
+    "description": "API for receiving and storing temperature and humidity data from IoT sensors."
+  },
+  "paths": {
+    "/api/data": {
+      "post": {
+        "summary": "Submit sensor data",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "temperature": {"type": "number"},
+                  "humidity": {"type": "number"}
+                },
+                "required": ["temperature", "humidity"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Data received and stored successfully."
+          },
+          "400": {
+            "description": "Invalid input."
+          }
+        }
+      }
+    }
+  }
+} 
