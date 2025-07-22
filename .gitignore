@@ -81,3 +81,5 @@ coverage.xml
 
 # VSCode
 .vscode/ 
+# Environment files
+.env 
