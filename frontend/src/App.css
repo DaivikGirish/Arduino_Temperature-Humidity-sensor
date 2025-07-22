@@ -1,0 +1,120 @@
+.dashboard-bg {
+  min-height: 100vh;
+  background: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dashboard-title-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+.dashboard-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #22223b;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.dashboard-range-btns {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.dashboard-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+.stats-panel {
+  width: 33.33%;
+  background: #f9fafb;
+  padding: 32px 24px;
+  border-right: 1px solid #e5e7eb;
+}
+.stats-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  color: #374151;
+}
+.stat-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.stat-card-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+.stat-section {
+  margin-bottom: 8px;
+}
+.stat-label {
+  font-weight: 600;
+}
+.stat-row {
+  display: flex;
+  gap: 12px;
+  font-size: 0.95rem;
+  margin-top: 4px;
+}
+.stat-mono {
+  font-family: monospace;
+}
+.stat-high {
+  color: #ef4444;
+}
+.stat-low {
+  color: #3b82f6;
+}
+.charts-panel {
+  width: 66.66%;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.chart-section {
+  background: #f9fafb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.chart-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #374151;
+}
+.range-btn {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border: 1px solid #bfc0c0;
+  border-radius: 6px;
+  background: #f3f4f6;
+  color: #22223b;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.range-btn:hover {
+  background: #e0e1dd;
+}
+.range-btn.active {
+  background: #22223b;
+  color: #fff;
+  border: 1px solid #22223b;
+}
